@@ -1,0 +1,184 @@
+# ================================
+# Arquivos e pastas do .NET / C#
+# ================================
+
+# Pastas de build e debug
+/bin/
+/obj/
+/out/
+/publish/
+
+# Arquivos de projeto gerados
+*.user
+*.suo
+*.cache
+*.log
+*.tmp
+*.temp
+*.pid
+*.psess
+*.vsp
+*.vspx
+*.sln.docstates
+*.csproj.user
+
+# Arquivos de configuração de usuário
+*.userprefs
+*.dbmdl
+*.resx
+*.vspscc
+*.vssscc
+*.vssettings
+*.vsmdi
+*.testsettings
+*.vsmacros
+
+# ================================
+# Pacotes NuGet
+# ================================
+
+/packages/
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+*.nuget.cache
+
+# ================================
+# Logs e arquivos temporários
+# ================================
+
+*.log
+*.logs
+*.tmp
+*.temp
+*.pid
+*.seed
+*.pid
+*.lock
+
+# ================================
+# Arquivos de desenvolvimento e IDE
+# ================================
+
+# Visual Studio
+/.vs/
+/.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Rider / JetBrains
+/.idea/
+*.iml
+
+# ================================
+# Arquivos de dados da aplicação
+# ================================
+
+# Mantém apenas o arquivo de dados inicial, mas ignora alterações locais
+dados.json
+!dados.json.example
+*.json.bak
+
+# ================================
+# Cobertura de testes e profiling
+# ================================
+
+/TestResults/
+/coverage/
+*.coverage
+*.coveragexml
+*.trx
+*.TestResults
+*.TestResult.xml
+
+# ================================
+# Outros arquivos gerados
+# ================================
+
+# Arquivos de recursos compilados
+*.resources.dll
+*.resources
+
+# Arquivos gerados pelo compilador
+*.GeneratedMSBuildEditorConfig.editorconfig
+*.AssemblyInfo.cs
+*.GlobalUsings.g.cs
+*.AssemblyAttributes.cs
+*.deps.json
+*.runtimeconfig.json
+*.nuget.g.props
+*.nuget.g.targets
+*.FileListAbsolute.txt
+*.project.assets.json
+*.dgspec.json
+
+# ================================
+# Arquivos sensíveis
+# ================================
+
+*.pfx
+*.p12
+*.snk
+*.key
+*.pem
+*.crt
+*.cer
+*.secret
+*.secrets
+.env
+*.env.local
+*.env.*.local
+*.key
+*.pem
+
+# ================================
+# Configurações específicas do sistema
+# ================================
+
+# Se você usar Docker
+/.docker/
+*.dockerignore
+
+# Se usar GitHub Actions
+/.github/
+
+# Arquivos de cobertura de código
+*.gcda
+*.gcno
+*.gcov
+
+# ================================
+# Para evitar commitar dados pessoais
+# ================================
+
+# Opcional: arquivos grandes ou binários
+*.dll
+*.exe
+*.msi
+*.msp
+*.pdb
+*.so
+*.dylib
+*.bin
+*.dat
+
+# ================================
+# Para manter o repositório limpo
+# ================================
+
+# Pasta de publicação
+/publish/
+/deploy/
+/dist/
+
+# Zip e arquivos compactados
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz

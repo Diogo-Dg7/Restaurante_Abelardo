@@ -100,10 +100,6 @@ dados.json
 # Outros arquivos gerados
 # ================================
 
-# Arquivos de recursos compilados
-*.resources.dll
-*.resources
-
 # Arquivos gerados pelo compilador
 *.GeneratedMSBuildEditorConfig.editorconfig
 *.AssemblyInfo.cs

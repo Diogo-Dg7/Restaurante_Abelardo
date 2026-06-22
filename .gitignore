@@ -25,7 +25,6 @@
 # Arquivos de configuração de usuário
 *.userprefs
 *.dbmdl
-*.resx
 *.vspscc
 *.vssscc
 *.vssettings

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Geral -->
+  <data name="AppTitulo" xml:space="preserve"><value>Restaurante Abelardo - Sistema de Pedidos</value></data>
+  <data name="MenuPrincipal" xml:space="preserve"><value>=== MENU PRINCIPAL ===</value></data>
+  <data name="OpcaoCliente" xml:space="preserve"><value>1. Area do Cliente</value></data>
+  <data name="OpcaoFuncionario" xml:space="preserve"><value>2. Area do Funcionario</value></data>
+  <data name="OpcaoAdmin" xml:space="preserve"><value>3. Area do Administrador</value></data>
+  <data name="OpcaoTrocarIdioma" xml:space="preserve"><value>4. Trocar idioma</value></data>
+  <data name="OpcaoSair" xml:space="preserve"><value>0. Sair</value></data>
+  <data name="EscolhaOpcao" xml:space="preserve"><value>Escolha uma opcao: </value></data>
+  <data name="OpcaoInvalida" xml:space="preserve"><value>Opcao invalida. Tente novamente.</value></data>
+  <data name="Voltar" xml:space="preserve"><value>0. Voltar</value></data>
+  <data name="EnterContinuar" xml:space="preserve"><value>Pressione ENTER para continuar...</value></data>
+  <data name="AteLogo" xml:space="preserve"><value>Ate logo!</value></data>
+
+  <!-- Idioma -->
+  <data name="TrocarIdiomaPrompt" xml:space="preserve"><value>Selecione: (1) Portugues  (2) English  (3) Espanol</value></data>
+  <data name="IdiomaAlterado" xml:space="preserve"><value>Idioma alterado com sucesso!</value></data>
+
+  <!-- Persistencia -->
+  <data name="DadosCarregados" xml:space="preserve"><value>Dados anteriores carregados com sucesso. Pressione ENTER para continuar...</value></data>
+  <data name="DadosMockCarregados" xml:space="preserve"><value>Nenhum dado salvo encontrado. Dados de exemplo carregados. Pressione ENTER para continuar...</value></data>
+  <data name="ErroDados" xml:space="preserve"><value>Erro ao carregar dados salvos. Iniciando com dados de exemplo...</value></data>
+  <data name="DadosSalvos" xml:space="preserve"><value>Dados salvos com sucesso.</value></data>
+
+  <!-- Autenticacao -->
+  <data name="SenhaFuncionario" xml:space="preserve"><value>Digite a senha do funcionario: </value></data>
+  <data name="SenhaAdmin" xml:space="preserve"><value>Digite a senha do administrador: </value></data>
+  <data name="SenhaIncorreta" xml:space="preserve"><value>Senha incorreta!</value></data>
+  <data name="AcessoConcedido" xml:space="preserve"><value>Acesso concedido!</value></data>
+
+  <!-- Menu Cardapio -->
+  <data name="MenuCardapio" xml:space="preserve"><value>=== GERENCIAMENTO DO CARDAPIO ===</value></data>
+  <data name="ListarItens" xml:space="preserve"><value>1. Listar todos os itens</value></data>
+  <data name="CadastrarItem" xml:space="preserve"><value>2. Cadastrar novo item</value></data>
+  <data name="EditarItem" xml:space="preserve"><value>3. Editar item</value></data>
+  <data name="DeletarItem" xml:space="preserve"><value>4. Deletar item</value></data>
+
+  <!-- Campos Item -->
+  <data name="ItemCodigo" xml:space="preserve"><value>Codigo do item: </value></data>
+  <data name="ItemCategoria" xml:space="preserve"><value>Categoria (1-Entradas, 2-Bebidas, 3-Pratos Principais, 4-Sobremesas): </value></data>
+  <data name="ItemDescricao" xml:space="preserve"><value>Descricao (pt-BR): </value></data>
+  <data name="ItemDescricaoEn" xml:space="preserve"><value>Descricao em ingles (English): </value></data>
+  <data name="ItemDescricaoEs" xml:space="preserve"><value>Descricao em espanhol (Espanol): </value></data>
+  <data name="ItemPreco" xml:space="preserve"><value>Preco: R$ </value></data>
+  <data name="ItemDisponivel" xml:space="preserve"><value>Disponivel? (S/N): </value></data>
+
+  <!-- Feedback Item -->
+  <data name="ItemCadastrado" xml:space="preserve"><value>Item cadastrado com sucesso!</value></data>
+  <data name="ItemEditado" xml:space="preserve"><value>Item editado com sucesso!</value></data>
+  <data name="ItemDeletado" xml:space="preserve"><value>Item deletado com sucesso!</value></data>
+  <data name="ItemNaoEncontrado" xml:space="preserve"><value>Item nao encontrado.</value></data>
+  <data name="ItemIndisponivel" xml:space="preserve"><value>Item indisponivel ou nao encontrado.</value></data>
+  <data name="ItemAdicionado" xml:space="preserve"><value>Item adicionado ao pedido!</value></data>
+  <data name="ItemRemovido" xml:space="preserve"><value>Item removido do pedido.</value></data>
+  <data name="CodigoJaExiste" xml:space="preserve"><value>Ja existe um item com esse codigo.</value></data>
+
+  <!-- Categorias -->
+  <data name="CatEntradas" xml:space="preserve"><value>Entradas</value></data>
+  <data name="CatBebidas" xml:space="preserve"><value>Bebidas</value></data>
+  <data name="CatPratosPrincipais" xml:space="preserve"><value>Pratos Principais</value></data>
+  <data name="CatSobremesas" xml:space="preserve"><value>Sobremesas</value></data>
+
+  <!-- Menu Cliente -->
+  <data name="MenuPedidos" xml:space="preserve"><value>=== AREA DO CLIENTE ===</value></data>
+  <data name="VisualizarCardapio" xml:space="preserve"><value>1. Visualizar cardapio</value></data>
+  <data name="FazerPedido" xml:space="preserve"><value>2. Fazer pedido</value></data>
+  <data name="EditarPedido" xml:space="preserve"><value>3. Editar pedido em aberto</value></data>
+  <data name="PagarPedido" xml:space="preserve"><value>4. Pagar e encerrar pedido</value></data>
+
+  <!-- Dados Cliente -->
+  <data name="NomeCliente" xml:space="preserve"><value>Seu nome (ENTER para anonimo): </value></data>
+  <data name="EmailCliente" xml:space="preserve"><value>Seu email (ENTER para pular): </value></data>
+
+  <!-- Operacoes Pedido -->
+  <data name="CodigoItem" xml:space="preserve"><value>Codigo do item (0 para encerrar): </value></data>
+  <data name="QuantidadeItem" xml:space="preserve"><value>Quantidade: </value></data>
+  <data name="NumeroPedido" xml:space="preserve"><value>Numero do pedido: </value></data>
+  <data name="OpcaoAdicionarItem" xml:space="preserve"><value>1. Adicionar item</value></data>
+  <data name="OpcaoRemoverItem" xml:space="preserve"><value>2. Remover item</value></data>
+  <data name="RemoverItem" xml:space="preserve"><value>Codigo do item a remover (0 para cancelar): </value></data>
+  <data name="DividirConta" xml:space="preserve"><value>Deseja dividir a conta? (S/N): </value></data>
+  <data name="NumeroPessoas" xml:space="preserve"><value>Numero de pessoas: </value></data>
+
+  <!-- Feedback Pedido -->
+  <data name="PedidoCriado" xml:space="preserve"><value>Pedido #{0} criado com sucesso!</value></data>
+  <data name="PedidoPago" xml:space="preserve"><value>Pedido #{0} pago! Total: R$ {1:F2}</value></data>
+  <data name="PedidoNaoEncontrado" xml:space="preserve"><value>Pedido nao encontrado.</value></data>
+  <data name="PedidoJaEncerrado" xml:space="preserve"><value>Esse pedido ja foi encerrado.</value></data>
+  <data name="PedidoVazio" xml:space="preserve"><value>O pedido esta vazio. Nenhum pedido foi criado.</value></data>
+  <data name="PedidoAtual" xml:space="preserve"><value>=== PEDIDO ATUAL ===</value></data>
+  <data name="ValorPorPessoa" xml:space="preserve"><value>Valor por pessoa: R$ {0:F2}</value></data>
+
+  <!-- Relatorios -->
+  <data name="MenuRelatorios" xml:space="preserve"><value>=== RELATORIOS ===</value></data>
+  <data name="RelatorioPeriodo" xml:space="preserve"><value>1. Relatorio por periodo</value></data>
+  <data name="RelatorioCliente" xml:space="preserve"><value>2. Relatorio por cliente</value></data>
+  <data name="RelatorioClientePeriodo" xml:space="preserve"><value>3. Relatorio por cliente em periodo</value></data>
+  <data name="RelatorioItem" xml:space="preserve"><value>4. Relatorio de consumo de item</value></data>
+  <data name="RelatorioTitulo" xml:space="preserve"><value>--- RELATORIO ---</value></data>
+  <data name="RelatorioGeradoEm" xml:space="preserve"><value>Gerado em</value></data>
+  <data name="RelatorioSalvo" xml:space="preserve"><value>Relatorio salvo em: {0}</value></data>
+  <data name="NenhumResultado" xml:space="preserve"><value>Nenhum resultado encontrado.</value></data>
+  <data name="EmailOuNome" xml:space="preserve"><value>Email ou nome do cliente: </value></data>
+
+  <!-- Datas -->
+  <data name="DataInicio" xml:space="preserve"><value>Data inicio ({0}): </value></data>
+  <data name="DataFim" xml:space="preserve"><value>Data fim ({0}): </value></data>
+  <data name="DataInvalida" xml:space="preserve"><value>Data invalida. Verifique o formato e tente novamente.</value></data>
+
+  <!-- Colunas -->
+  <data name="ColCodigo" xml:space="preserve"><value>Codigo</value></data>
+  <data name="ColCategoria" xml:space="preserve"><value>Categoria</value></data>
+  <data name="ColDescricao" xml:space="preserve"><value>Descricao</value></data>
+  <data name="ColPreco" xml:space="preserve"><value>Preco</value></data>
+  <data name="ColDisponivel" xml:space="preserve"><value>Disponivel</value></data>
+  <data name="ColSim" xml:space="preserve"><value>Sim</value></data>
+  <data name="ColNao" xml:space="preserve"><value>Nao</value></data>
+  <data name="ColPedido" xml:space="preserve"><value>Pedido</value></data>
+  <data name="ColCliente" xml:space="preserve"><value>Cliente</value></data>
+  <data name="ColData" xml:space="preserve"><value>Data</value></data>
+  <data name="ColTotal" xml:space="preserve"><value>Total</value></data>
+  <data name="ColStatus" xml:space="preserve"><value>Status</value></data>
+
+  <!-- Status -->
+  <data name="StatusAberto" xml:space="preserve"><value>Aberto</value></data>
+  <data name="StatusPago" xml:space="preserve"><value>Pago</value></data>
+  <data name="Total" xml:space="preserve"><value>TOTAL: R$ {0:F2}</value></data>
+</root>

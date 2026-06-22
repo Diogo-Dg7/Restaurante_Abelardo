@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- General -->
+  <data name="AppTitulo" xml:space="preserve"><value>Restaurant Abelardo - Order System</value></data>
+  <data name="MenuPrincipal" xml:space="preserve"><value>=== MAIN MENU ===</value></data>
+  <data name="OpcaoCliente" xml:space="preserve"><value>1. Customer Area</value></data>
+  <data name="OpcaoFuncionario" xml:space="preserve"><value>2. Staff Area</value></data>
+  <data name="OpcaoAdmin" xml:space="preserve"><value>3. Admin Area</value></data>
+  <data name="OpcaoTrocarIdioma" xml:space="preserve"><value>4. Switch language</value></data>
+  <data name="OpcaoSair" xml:space="preserve"><value>0. Exit</value></data>
+  <data name="EscolhaOpcao" xml:space="preserve"><value>Choose an option: </value></data>
+  <data name="OpcaoInvalida" xml:space="preserve"><value>Invalid option. Please try again.</value></data>
+  <data name="Voltar" xml:space="preserve"><value>0. Back</value></data>
+  <data name="EnterContinuar" xml:space="preserve"><value>Press ENTER to continue...</value></data>
+  <data name="AteLogo" xml:space="preserve"><value>Goodbye!</value></data>
+
+  <!-- Language -->
+  <data name="TrocarIdiomaPrompt" xml:space="preserve"><value>Select: (1) Portugues  (2) English  (3) Espanol</value></data>
+  <data name="IdiomaAlterado" xml:space="preserve"><value>Language changed successfully!</value></data>
+
+  <!-- Persistence -->
+  <data name="DadosCarregados" xml:space="preserve"><value>Previous data loaded successfully. Press ENTER to continue...</value></data>
+  <data name="DadosMockCarregados" xml:space="preserve"><value>No saved data found. Sample data loaded. Press ENTER to continue...</value></data>
+  <data name="ErroDados" xml:space="preserve"><value>Error loading saved data. Starting with sample data...</value></data>
+  <data name="DadosSalvos" xml:space="preserve"><value>Data saved successfully.</value></data>
+
+  <!-- Authentication -->
+  <data name="SenhaFuncionario" xml:space="preserve"><value>Enter staff password: </value></data>
+  <data name="SenhaAdmin" xml:space="preserve"><value>Enter admin password: </value></data>
+  <data name="SenhaIncorreta" xml:space="preserve"><value>Incorrect password!</value></data>
+  <data name="AcessoConcedido" xml:space="preserve"><value>Access granted!</value></data>
+
+  <!-- Menu Management -->
+  <data name="MenuCardapio" xml:space="preserve"><value>=== MENU MANAGEMENT ===</value></data>
+  <data name="ListarItens" xml:space="preserve"><value>1. List all items</value></data>
+  <data name="CadastrarItem" xml:space="preserve"><value>2. Add new item</value></data>
+  <data name="EditarItem" xml:space="preserve"><value>3. Edit item</value></data>
+  <data name="DeletarItem" xml:space="preserve"><value>4. Delete item</value></data>
+
+  <!-- Item Fields -->
+  <data name="ItemCodigo" xml:space="preserve"><value>Item code: </value></data>
+  <data name="ItemCategoria" xml:space="preserve"><value>Category (1-Starters, 2-Drinks, 3-Main Courses, 4-Desserts): </value></data>
+  <data name="ItemDescricao" xml:space="preserve"><value>Description (pt-BR): </value></data>
+  <data name="ItemDescricaoEn" xml:space="preserve"><value>English description: </value></data>
+  <data name="ItemDescricaoEs" xml:space="preserve"><value>Spanish description (Espanol): </value></data>
+  <data name="ItemPreco" xml:space="preserve"><value>Price: $ </value></data>
+  <data name="ItemDisponivel" xml:space="preserve"><value>Available? (Y/N): </value></data>
+
+  <!-- Item Feedback -->
+  <data name="ItemCadastrado" xml:space="preserve"><value>Item added successfully!</value></data>
+  <data name="ItemEditado" xml:space="preserve"><value>Item updated successfully!</value></data>
+  <data name="ItemDeletado" xml:space="preserve"><value>Item deleted successfully!</value></data>
+  <data name="ItemNaoEncontrado" xml:space="preserve"><value>Item not found.</value></data>
+  <data name="ItemIndisponivel" xml:space="preserve"><value>Item unavailable or not found.</value></data>
+  <data name="ItemAdicionado" xml:space="preserve"><value>Item added to order!</value></data>
+  <data name="ItemRemovido" xml:space="preserve"><value>Item removed from order.</value></data>
+  <data name="CodigoJaExiste" xml:space="preserve"><value>An item with this code already exists.</value></data>
+
+  <!-- Categories -->
+  <data name="CatEntradas" xml:space="preserve"><value>Starters</value></data>
+  <data name="CatBebidas" xml:space="preserve"><value>Drinks</value></data>
+  <data name="CatPratosPrincipais" xml:space="preserve"><value>Main Courses</value></data>
+  <data name="CatSobremesas" xml:space="preserve"><value>Desserts</value></data>
+
+  <!-- Customer Menu -->
+  <data name="MenuPedidos" xml:space="preserve"><value>=== CUSTOMER AREA ===</value></data>
+  <data name="VisualizarCardapio" xml:space="preserve"><value>1. View menu</value></data>
+  <data name="FazerPedido" xml:space="preserve"><value>2. Place an order</value></data>
+  <data name="EditarPedido" xml:space="preserve"><value>3. Edit open order</value></data>
+  <data name="PagarPedido" xml:space="preserve"><value>4. Pay and close order</value></data>
+
+  <!-- Customer Data -->
+  <data name="NomeCliente" xml:space="preserve"><value>Your name (ENTER for anonymous): </value></data>
+  <data name="EmailCliente" xml:space="preserve"><value>Your email (ENTER to skip): </value></data>
+
+  <!-- Order Operations -->
+  <data name="CodigoItem" xml:space="preserve"><value>Item code (0 to finish): </value></data>
+  <data name="QuantidadeItem" xml:space="preserve"><value>Quantity: </value></data>
+  <data name="NumeroPedido" xml:space="preserve"><value>Order number: </value></data>
+  <data name="OpcaoAdicionarItem" xml:space="preserve"><value>1. Add item</value></data>
+  <data name="OpcaoRemoverItem" xml:space="preserve"><value>2. Remove item</value></data>
+  <data name="RemoverItem" xml:space="preserve"><value>Item code to remove (0 to cancel): </value></data>
+  <data name="DividirConta" xml:space="preserve"><value>Split the bill? (Y/N): </value></data>
+  <data name="NumeroPessoas" xml:space="preserve"><value>Number of people: </value></data>
+
+  <!-- Order Feedback -->
+  <data name="PedidoCriado" xml:space="preserve"><value>Order #{0} created successfully!</value></data>
+  <data name="PedidoPago" xml:space="preserve"><value>Order #{0} paid! Total: $ {1:F2}</value></data>
+  <data name="PedidoNaoEncontrado" xml:space="preserve"><value>Order not found.</value></data>
+  <data name="PedidoJaEncerrado" xml:space="preserve"><value>This order is already closed.</value></data>
+  <data name="PedidoVazio" xml:space="preserve"><value>The order is empty. No order was created.</value></data>
+  <data name="PedidoAtual" xml:space="preserve"><value>=== CURRENT ORDER ===</value></data>
+  <data name="ValorPorPessoa" xml:space="preserve"><value>Amount per person: $ {0:F2}</value></data>
+
+  <!-- Reports -->
+  <data name="MenuRelatorios" xml:space="preserve"><value>=== REPORTS ===</value></data>
+  <data name="RelatorioPeriodo" xml:space="preserve"><value>1. Report by period</value></data>
+  <data name="RelatorioCliente" xml:space="preserve"><value>2. Report by customer</value></data>
+  <data name="RelatorioClientePeriodo" xml:space="preserve"><value>3. Report by customer in period</value></data>
+  <data name="RelatorioItem" xml:space="preserve"><value>4. Item consumption report</value></data>
+  <data name="RelatorioTitulo" xml:space="preserve"><value>--- REPORT ---</value></data>
+  <data name="RelatorioGeradoEm" xml:space="preserve"><value>Generated at</value></data>
+  <data name="RelatorioSalvo" xml:space="preserve"><value>Report saved to: {0}</value></data>
+  <data name="NenhumResultado" xml:space="preserve"><value>No results found.</value></data>
+  <data name="EmailOuNome" xml:space="preserve"><value>Customer email or name: </value></data>
+
+  <!-- Dates -->
+  <data name="DataInicio" xml:space="preserve"><value>Start date ({0}): </value></data>
+  <data name="DataFim" xml:space="preserve"><value>End date ({0}): </value></data>
+  <data name="DataInvalida" xml:space="preserve"><value>Invalid date. Please check the format and try again.</value></data>
+
+  <!-- Columns -->
+  <data name="ColCodigo" xml:space="preserve"><value>Code</value></data>
+  <data name="ColCategoria" xml:space="preserve"><value>Category</value></data>
+  <data name="ColDescricao" xml:space="preserve"><value>Description</value></data>
+  <data name="ColPreco" xml:space="preserve"><value>Price</value></data>
+  <data name="ColDisponivel" xml:space="preserve"><value>Available</value></data>
+  <data name="ColSim" xml:space="preserve"><value>Yes</value></data>
+  <data name="ColNao" xml:space="preserve"><value>No</value></data>
+  <data name="ColPedido" xml:space="preserve"><value>Order</value></data>
+  <data name="ColCliente" xml:space="preserve"><value>Customer</value></data>
+  <data name="ColData" xml:space="preserve"><value>Date</value></data>
+  <data name="ColTotal" xml:space="preserve"><value>Total</value></data>
+  <data name="ColStatus" xml:space="preserve"><value>Status</value></data>
+
+  <!-- Status -->
+  <data name="StatusAberto" xml:space="preserve"><value>Open</value></data>
+  <data name="StatusPago" xml:space="preserve"><value>Paid</value></data>
+  <data name="Total" xml:space="preserve"><value>TOTAL: $ {0:F2}</value></data>
+</root>

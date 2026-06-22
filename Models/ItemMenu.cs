@@ -8,6 +8,8 @@ namespace Abelardo.Models
         public string Descricao { get; set; }       // pt-BR
         public string DescricaoEn { get; set; }     // English
         public string DescricaoEs { get; set; }     // Español
+        public string DescricaoFr { get; set; }     // Français
+        public string DescricaoJa { get; set; }     // 日本語
         public decimal Preco { get; set; }
 
         // Construtor para JSON
@@ -15,15 +17,18 @@ namespace Abelardo.Models
 
         public ItemMenu(string codigo, Categoria categoria, string descricao,
                         decimal preco, bool disponivel = true,
-                        string descricaoEn = "", string descricaoEs = "")
+                        string descricaoEn = "", string descricaoEs = "",
+                        string descricaoFr = "", string descricaoJa = "")
         {
-            Codigo      = codigo.ToUpper();
-            Categoria   = categoria;
-            Descricao   = descricao;
+            Codigo = codigo.ToUpper();
+            Categoria = categoria;
+            Descricao = descricao;
             DescricaoEn = string.IsNullOrWhiteSpace(descricaoEn) ? descricao : descricaoEn;
             DescricaoEs = string.IsNullOrWhiteSpace(descricaoEs) ? descricao : descricaoEs;
-            Preco       = preco;
-            Disponivel  = disponivel;
+            DescricaoFr = string.IsNullOrWhiteSpace(descricaoFr) ? descricao : descricaoFr;
+            DescricaoJa = string.IsNullOrWhiteSpace(descricaoJa) ? descricao : descricaoJa;
+            Preco = preco;
+            Disponivel = disponivel;
         }
 
         // Retorna a descricao no idioma correto
@@ -31,19 +36,24 @@ namespace Abelardo.Models
         {
             "en" => DescricaoEn,
             "es" => DescricaoEs,
-            _    => Descricao
+            "fr" => DescricaoFr,
+            "ja" => DescricaoJa,
+            _ => Descricao
         };
 
         public void Atualizar(Categoria novaCategoria, string novaDescricao,
                               decimal novoPreco, bool novoDisponivel,
-                              string novaDescricaoEn = "", string novaDescricaoEs = "")
+                              string novaDescricaoEn = "", string novaDescricaoEs = "",
+                              string novaDescricaoFr = "", string novaDescricaoJa = "")
         {
-            Categoria   = novaCategoria;
-            Descricao   = novaDescricao;
+            Categoria = novaCategoria;
+            Descricao = novaDescricao;
             DescricaoEn = string.IsNullOrWhiteSpace(novaDescricaoEn) ? novaDescricao : novaDescricaoEn;
             DescricaoEs = string.IsNullOrWhiteSpace(novaDescricaoEs) ? novaDescricao : novaDescricaoEs;
-            Preco       = novoPreco;
-            Disponivel  = novoDisponivel;
+            DescricaoFr = string.IsNullOrWhiteSpace(novaDescricaoFr) ? novaDescricao : novaDescricaoFr;
+            DescricaoJa = string.IsNullOrWhiteSpace(novaDescricaoJa) ? novaDescricao : novaDescricaoJa;
+            Preco = novoPreco;
+            Disponivel = novoDisponivel;
         }
     }
 }

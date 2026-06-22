@@ -14,8 +14,8 @@ namespace Abelardo.Services
 
         private readonly JsonSerializerOptions _opcoes = new JsonSerializerOptions
         {
-            WriteIndented         = true,
-            Converters            = { new JsonStringEnumConverter() },
+            WriteIndented = true,
+            Converters = { new JsonStringEnumConverter() },
             PropertyNameCaseInsensitive = true
         };
 
@@ -68,17 +68,17 @@ namespace Abelardo.Services
             {
                 var dto = new PedidoDto
                 {
-                    Id        = p.Id,
+                    Id = p.Id,
                     ClienteId = p.Cliente.Id,
-                    DataHora  = p.DataHora,
-                    Pago      = p.Pago
+                    DataHora = p.DataHora,
+                    Pago = p.Pago
                 };
                 foreach (var ip in p.Itens)
                     dto.Itens.Add(new ItemPedidoDto
                     {
-                        CodigoItem     = ip.Item.Codigo,
-                        Quantidade     = ip.Quantidade,
-                        PrecoUnitario  = ip.PrecoUnitario
+                        CodigoItem = ip.Item.Codigo,
+                        Quantidade = ip.Quantidade,
+                        PrecoUnitario = ip.PrecoUnitario
                     });
                 dados.Pedidos.Add(dto);
             }
@@ -101,7 +101,7 @@ namespace Abelardo.Services
             try
             {
                 string json = File.ReadAllText(ARQUIVO);
-                var dados   = JsonSerializer.Deserialize<Dados>(json, _opcoes);
+                var dados = JsonSerializer.Deserialize<Dados>(json, _opcoes);
                 if (dados == null) return false;
 
                 // Restaura itens do menu
@@ -124,11 +124,11 @@ namespace Abelardo.Services
 
                     var pedido = new Pedido
                     {
-                        Id       = dto.Id,
-                        Cliente  = cliente,
+                        Id = dto.Id,
+                        Cliente = cliente,
                         DataHora = dto.DataHora,
-                        Pago     = dto.Pago,
-                        Itens    = new List<ItemPedido>()
+                        Pago = dto.Pago,
+                        Itens = new List<ItemPedido>()
                     };
 
                     foreach (var ipDto in dto.Itens)
@@ -138,8 +138,8 @@ namespace Abelardo.Services
 
                         pedido.Itens.Add(new ItemPedido
                         {
-                            Item          = itemMenu,
-                            Quantidade    = ipDto.Quantidade,
+                            Item = itemMenu,
+                            Quantidade = ipDto.Quantidade,
                             PrecoUnitario = ipDto.PrecoUnitario
                         });
                     }

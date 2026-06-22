@@ -20,7 +20,8 @@
   <data name="AteLogo" xml:space="preserve"><value>Goodbye!</value></data>
 
   <!-- Language -->
-  <data name="TrocarIdiomaPrompt" xml:space="preserve"><value>Select: (1) Portugues  (2) English  (3) Espanol</value></data>
+  <data name="TrocarIdiomaPrompt" xml:space="preserve">
+  <value>Select: (1) Portuguese  (2) English  (3) Spanish  (4) French  (5) Japanese</value></data>
   <data name="IdiomaAlterado" xml:space="preserve"><value>Language changed successfully!</value></data>
 
   <!-- Persistence -->

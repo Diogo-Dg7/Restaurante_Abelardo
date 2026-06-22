@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Geral -->
+  <data name="AppTitulo" xml:space="preserve"><value>Restaurant Abelardo - Système de Commandes</value></data>
+  <data name="MenuPrincipal" xml:space="preserve"><value>=== MENU PRINCIPAL ===</value></data>
+  <data name="OpcaoCliente" xml:space="preserve"><value>1. Espace Client</value></data>
+  <data name="OpcaoFuncionario" xml:space="preserve"><value>2. Espace Employé</value></data>
+  <data name="OpcaoAdmin" xml:space="preserve"><value>3. Espace Administrateur</value></data>
+  <data name="OpcaoTrocarIdioma" xml:space="preserve"><value>4. Changer de langue</value></data>
+  <data name="OpcaoSair" xml:space="preserve"><value>0. Quitter</value></data>
+  <data name="EscolhaOpcao" xml:space="preserve"><value>Choisissez une option: </value></data>
+  <data name="OpcaoInvalida" xml:space="preserve"><value>Option invalide. Veuillez réessayer.</value></data>
+  <data name="Voltar" xml:space="preserve"><value>0. Retour</value></data>
+  <data name="EnterContinuar" xml:space="preserve"><value>Appuyez sur ENTER pour continuer...</value></data>
+  <data name="AteLogo" xml:space="preserve"><value>Au revoir!</value></data>
+
+  <!-- Idioma -->
+  <data name="TrocarIdiomaPrompt" xml:space="preserve">
+  <value>Sélectionnez: (1) Portugais  (2) English  (3) Español  (4) Français  (5) Japonais</value></data>
+  <data name="IdiomaAlterado" xml:space="preserve"><value>Langue changée avec succès!</value></data>
+
+  <!-- Persistencia -->
+  <data name="DadosCarregados" xml:space="preserve"><value>Données précédentes chargées avec succès. Appuyez sur ENTER pour continuer...</value></data>
+  <data name="DadosMockCarregados" xml:space="preserve"><value>Aucune donnée sauvegardée trouvée. Données d'exemple chargées. Appuyez sur ENTER pour continuer...</value></data>
+  <data name="ErroDados" xml:space="preserve"><value>Erreur lors du chargement des données sauvegardées. Démarrage avec les données d'exemple...</value></data>
+  <data name="DadosSalvos" xml:space="preserve"><value>Données sauvegardées avec succès.</value></data>
+
+  <!-- Autenticacao -->
+  <data name="SenhaFuncionario" xml:space="preserve"><value>Entrez le mot de passe employé: </value></data>
+  <data name="SenhaAdmin" xml:space="preserve"><value>Entrez le mot de passe administrateur: </value></data>
+  <data name="SenhaIncorreta" xml:space="preserve"><value>Mot de passe incorrect!</value></data>
+  <data name="AcessoConcedido" xml:space="preserve"><value>Accès autorisé!</value></data>
+
+  <!-- Menu Cardapio -->
+  <data name="MenuCardapio" xml:space="preserve"><value>=== GESTION DE LA CARTE ===</value></data>
+  <data name="ListarItens" xml:space="preserve"><value>1. Lister tous les articles</value></data>
+  <data name="CadastrarItem" xml:space="preserve"><value>2. Ajouter un nouvel article</value></data>
+  <data name="EditarItem" xml:space="preserve"><value>3. Modifier un article</value></data>
+  <data name="DeletarItem" xml:space="preserve"><value>4. Supprimer un article</value></data>
+
+  <!-- Campos Item -->
+  <data name="ItemCodigo" xml:space="preserve"><value>Code de l'article: </value></data>
+  <data name="ItemCategoria" xml:space="preserve"><value>Catégorie (1-Entrées, 2-Boissons, 3-Plats Principaux, 4-Desserts): </value></data>
+  <data name="ItemDescricao" xml:space="preserve"><value>Description (pt-BR): </value></data>
+  <data name="ItemDescricaoEn" xml:space="preserve"><value>Description en anglais (English): </value></data>
+  <data name="ItemDescricaoEs" xml:space="preserve"><value>Description en espagnol (Español): </value></data>
+  <data name="ItemDescricaoFr" xml:space="preserve"><value>Description en français: </value></data>
+  <data name="ItemPreco" xml:space="preserve"><value>Prix: € </value></data>
+  <data name="ItemDisponivel" xml:space="preserve"><value>Disponible? (O/N): </value></data>
+
+  <!-- Feedback Item -->
+  <data name="ItemCadastrado" xml:space="preserve"><value>Article ajouté avec succès!</value></data>
+  <data name="ItemEditado" xml:space="preserve"><value>Article modifié avec succès!</value></data>
+  <data name="ItemDeletado" xml:space="preserve"><value>Article supprimé avec succès!</value></data>
+  <data name="ItemNaoEncontrado" xml:space="preserve"><value>Article non trouvé.</value></data>
+  <data name="ItemIndisponivel" xml:space="preserve"><value>Article indisponible ou non trouvé.</value></data>
+  <data name="ItemAdicionado" xml:space="preserve"><value>Article ajouté à la commande!</value></data>
+  <data name="ItemRemovido" xml:space="preserve"><value>Article retiré de la commande.</value></data>
+  <data name="CodigoJaExiste" xml:space="preserve"><value>Un article avec ce code existe déjà.</value></data>
+
+  <!-- Categorias -->
+  <data name="CatEntradas" xml:space="preserve"><value>Entrées</value></data>
+  <data name="CatBebidas" xml:space="preserve"><value>Boissons</value></data>
+  <data name="CatPratosPrincipais" xml:space="preserve"><value>Plats Principaux</value></data>
+  <data name="CatSobremesas" xml:space="preserve"><value>Desserts</value></data>
+
+  <!-- Menu Cliente -->
+  <data name="MenuPedidos" xml:space="preserve"><value>=== ESPACE CLIENT ===</value></data>
+  <data name="VisualizarCardapio" xml:space="preserve"><value>1. Voir la carte</value></data>
+  <data name="FazerPedido" xml:space="preserve"><value>2. Passer une commande</value></data>
+  <data name="EditarPedido" xml:space="preserve"><value>3. Modifier une commande ouverte</value></data>
+  <data name="PagarPedido" xml:space="preserve"><value>4. Payer et clôturer la commande</value></data>
+
+  <!-- Dados Cliente -->
+  <data name="NomeCliente" xml:space="preserve"><value>Votre nom (ENTER pour anonyme): </value></data>
+  <data name="EmailCliente" xml:space="preserve"><value>Votre email (ENTER pour ignorer): </value></data>
+
+  <!-- Operacoes Pedido -->
+  <data name="CodigoItem" xml:space="preserve"><value>Code de l'article (0 pour terminer): </value></data>
+  <data name="QuantidadeItem" xml:space="preserve"><value>Quantité: </value></data>
+  <data name="NumeroPedido" xml:space="preserve"><value>Numéro de commande: </value></data>
+  <data name="OpcaoAdicionarItem" xml:space="preserve"><value>1. Ajouter un article</value></data>
+  <data name="OpcaoRemoverItem" xml:space="preserve"><value>2. Retirer un article</value></data>
+  <data name="RemoverItem" xml:space="preserve"><value>Code de l'article à retirer (0 pour annuler): </value></data>
+  <data name="DividirConta" xml:space="preserve"><value>Souhaitez-vous diviser l'addition? (O/N): </value></data>
+  <data name="NumeroPessoas" xml:space="preserve"><value>Nombre de personnes: </value></data>
+
+  <!-- Feedback Pedido -->
+  <data name="PedidoCriado" xml:space="preserve"><value>Commande #{0} créée avec succès!</value></data>
+  <data name="PedidoPago" xml:space="preserve"><value>Commande #{0} payée! Total: € {1:F2}</value></data>
+  <data name="PedidoNaoEncontrado" xml:space="preserve"><value>Commande non trouvée.</value></data>
+  <data name="PedidoJaEncerrado" xml:space="preserve"><value>Cette commande est déjà clôturée.</value></data>
+  <data name="PedidoVazio" xml:space="preserve"><value>La commande est vide. Aucune commande n'a été créée.</value></data>
+  <data name="PedidoAtual" xml:space="preserve"><value>=== COMMANDE ACTUELLE ===</value></data>
+  <data name="ValorPorPessoa" xml:space="preserve"><value>Montant par personne: € {0:F2}</value></data>
+
+  <!-- Relatorios -->
+  <data name="MenuRelatorios" xml:space="preserve"><value>=== RAPPORTS ===</value></data>
+  <data name="RelatorioPeriodo" xml:space="preserve"><value>1. Rapport par période</value></data>
+  <data name="RelatorioCliente" xml:space="preserve"><value>2. Rapport par client</value></data>
+  <data name="RelatorioClientePeriodo" xml:space="preserve"><value>3. Rapport par client sur une période</value></data>
+  <data name="RelatorioItem" xml:space="preserve"><value>4. Rapport de consommation d'article</value></data>
+  <data name="RelatorioTitulo" xml:space="preserve"><value>--- RAPPORT ---</value></data>
+  <data name="RelatorioGeradoEm" xml:space="preserve"><value>Généré le</value></data>
+  <data name="RelatorioSalvo" xml:space="preserve"><value>Rapport sauvegardé dans: {0}</value></data>
+  <data name="NenhumResultado" xml:space="preserve"><value>Aucun résultat trouvé.</value></data>
+  <data name="EmailOuNome" xml:space="preserve"><value>Email ou nom du client: </value></data>
+
+  <!-- Datas -->
+  <data name="DataInicio" xml:space="preserve"><value>Date de début ({0}): </value></data>
+  <data name="DataFim" xml:space="preserve"><value>Date de fin ({0}): </value></data>
+  <data name="DataInvalida" xml:space="preserve"><value>Date invalide. Vérifiez le format et réessayez.</value></data>
+
+  <!-- Colunas -->
+  <data name="ColCodigo" xml:space="preserve"><value>Code</value></data>
+  <data name="ColCategoria" xml:space="preserve"><value>Catégorie</value></data>
+  <data name="ColDescricao" xml:space="preserve"><value>Description</value></data>
+  <data name="ColPreco" xml:space="preserve"><value>Prix</value></data>
+  <data name="ColDisponivel" xml:space="preserve"><value>Disponible</value></data>
+  <data name="ColSim" xml:space="preserve"><value>Oui</value></data>
+  <data name="ColNao" xml:space="preserve"><value>Non</value></data>
+  <data name="ColPedido" xml:space="preserve"><value>Commande</value></data>
+  <data name="ColCliente" xml:space="preserve"><value>Client</value></data>
+  <data name="ColData" xml:space="preserve"><value>Date</value></data>
+  <data name="ColTotal" xml:space="preserve"><value>Total</value></data>
+  <data name="ColStatus" xml:space="preserve"><value>Statut</value></data>
+
+  <!-- Status -->
+  <data name="StatusAberto" xml:space="preserve"><value>Ouvert</value></data>
+  <data name="StatusPago" xml:space="preserve"><value>Payé</value></data>
+  <data name="Total" xml:space="preserve"><value>TOTAL: € {0:F2}</value></data>
+</root>

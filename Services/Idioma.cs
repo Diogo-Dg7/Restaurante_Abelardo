@@ -9,11 +9,13 @@ namespace Abelardo.Services
         private ResourceManager _rm;
         private CultureInfo _cultura;
 
-        // "pt", "en" ou "es"
+        // "pt", "en", "es", "fr" ou "ja"
         public string Codigo { get; private set; }
 
-        public bool IsIngles   => Codigo == "en";
+        public bool IsIngles => Codigo == "en";
         public bool IsEspanhol => Codigo == "es";
+        public bool IsFrances => Codigo == "fr";
+        public bool IsJapones => Codigo == "ja";
         public CultureInfo CulturaAtual => _cultura;
         public string FormatoData => IsIngles ? "MM/dd/yyyy" : "dd/MM/yyyy";
 
@@ -26,15 +28,23 @@ namespace Abelardo.Services
             switch (opcao)
             {
                 case 2:
-                    Codigo   = "en";
+                    Codigo = "en";
                     _cultura = new CultureInfo("en");
                     break;
                 case 3:
-                    Codigo   = "es";
+                    Codigo = "es";
                     _cultura = new CultureInfo("es");
                     break;
+                case 4:
+                    Codigo = "fr";
+                    _cultura = new CultureInfo("fr");
+                    break;
+                case 5:
+                    Codigo = "ja";
+                    _cultura = new CultureInfo("ja");
+                    break;
                 default:
-                    Codigo   = "pt";
+                    Codigo = "pt";
                     _cultura = new CultureInfo("pt-BR");
                     break;
             }
@@ -56,7 +66,9 @@ namespace Abelardo.Services
             resposta = resposta.Trim().ToUpper();
             return resposta == "S" || resposta == "SIM"
                 || resposta == "Y" || resposta == "YES"
-                || resposta == "SI" || resposta == "SÍ";
+                || resposta == "SI" || resposta == "SÍ"
+                || resposta == "O" || resposta == "OUI"
+                || resposta == "はい" || resposta == "HAI";
         }
 
         public string FormatarData(DateTime dt)

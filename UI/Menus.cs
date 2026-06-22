@@ -11,22 +11,22 @@ namespace Abelardo.UI
 {
     public class Menus
     {
-        private readonly MenuService      _menuService;
-        private readonly PedidoService    _pedidoService;
+        private readonly MenuService _menuService;
+        private readonly PedidoService _pedidoService;
         private readonly RelatorioService _relatorioService;
-        private readonly Idioma           _idioma;
+        private readonly Idioma _idioma;
 
         private const string SENHA_FUNCIONARIO = "func123";
-        private const string SENHA_ADMIN       = "admin123";
-        private const string PASTA_RELATORIOS  = "Relatorios";
+        private const string SENHA_ADMIN = "admin123";
+        private const string PASTA_RELATORIOS = "Relatorios";
 
         public Menus(MenuService menuService, PedidoService pedidoService,
                      RelatorioService relatorioService, Idioma idioma)
         {
-            _menuService      = menuService;
-            _pedidoService    = pedidoService;
+            _menuService = menuService;
+            _pedidoService = pedidoService;
             _relatorioService = relatorioService;
-            _idioma           = idioma;
+            _idioma = idioma;
         }
 
         // ── Helpers ────────────────────────────────────────────────────
@@ -68,7 +68,7 @@ namespace Abelardo.UI
             {
                 Directory.CreateDirectory(PASTA_RELATORIOS);
                 string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
-                string arquivo   = Path.Combine(PASTA_RELATORIOS, $"{prefixo}_{timestamp}.txt");
+                string arquivo = Path.Combine(PASTA_RELATORIOS, $"{prefixo}_{timestamp}.txt");
                 File.WriteAllText(arquivo, conteudo, Encoding.UTF8);
                 Console.WriteLine(_idioma.Get("RelatorioSalvo", arquivo));
             }
@@ -133,10 +133,10 @@ namespace Abelardo.UI
 
                 switch (Console.ReadLine())
                 {
-                    case "1": MenuCliente();     break;
+                    case "1": MenuCliente(); break;
                     case "2": MenuFuncionario(); break;
-                    case "3": MenuAdmin();       break;
-                    case "4": TrocarIdioma();    break;
+                    case "3": MenuAdmin(); break;
+                    case "4": TrocarIdioma(); break;
                     case "0": return;
                     default:
                         Console.WriteLine(_idioma.Get("OpcaoInvalida"));
@@ -153,7 +153,7 @@ namespace Abelardo.UI
             Console.Write("> ");
             string op = Console.ReadLine();
 
-            if (op == "1" || op == "2" || op == "3")
+            if (op == "1" || op == "2" || op == "3" || op == "4" || op == "5")
             {
                 _idioma.Trocar(int.Parse(op));
                 Console.WriteLine(_idioma.Get("IdiomaAlterado"));
@@ -182,9 +182,9 @@ namespace Abelardo.UI
                 switch (Console.ReadLine())
                 {
                     case "1": ExibirCardapio(true); Pausar(); break;
-                    case "2": FluxoFazerPedido();             break;
-                    case "3": FluxoEditarPedido();            break;
-                    case "4": FluxoPagarPedido();             break;
+                    case "2": FluxoFazerPedido(); break;
+                    case "3": FluxoEditarPedido(); break;
+                    case "4": FluxoPagarPedido(); break;
                     case "0": return;
                     default:
                         Console.WriteLine(_idioma.Get("OpcaoInvalida"));
@@ -201,8 +201,8 @@ namespace Abelardo.UI
                 ? _menuService.ItensDisponiveis
                 : _menuService.Itens;
 
-            string cCod  = _idioma.Get("ColCodigo");
-            string cCat  = _idioma.Get("ColCategoria");
+            string cCod = _idioma.Get("ColCodigo");
+            string cCat = _idioma.Get("ColCategoria");
             string cDesc = _idioma.Get("ColDescricao");
             string cPrec = _idioma.Get("ColPreco");
             string cDisp = _idioma.Get("ColDisponivel");
@@ -212,7 +212,7 @@ namespace Abelardo.UI
 
             foreach (var item in lista)
             {
-                string cat  = _menuService.NomeCategoria(item.Categoria);
+                string cat = _menuService.NomeCategoria(item.Categoria);
                 string desc = item.ObterDescricao(_idioma.Codigo);
                 string disp = item.Disponivel
                     ? _idioma.Get("ColSim")
@@ -232,7 +232,7 @@ namespace Abelardo.UI
             string email = Console.ReadLine();
 
             var cliente = _pedidoService.ObterOuCriarCliente(nome, email);
-            var pedido  = _pedidoService.CriarPedido(cliente);
+            var pedido = _pedidoService.CriarPedido(cliente);
 
             AdicionarItensAoPedido(pedido);
 
@@ -426,9 +426,9 @@ namespace Abelardo.UI
                 switch (Console.ReadLine())
                 {
                     case "1": ExibirCardapio(); Pausar(); break;
-                    case "2": FluxoCadastrarItem();       break;
-                    case "3": FluxoEditarItem();          break;
-                    case "4": FluxoDeletarItem();         break;
+                    case "2": FluxoCadastrarItem(); break;
+                    case "3": FluxoEditarItem(); break;
+                    case "4": FluxoDeletarItem(); break;
                     case "0": return;
                     default:
                         Console.WriteLine(_idioma.Get("OpcaoInvalida"));
@@ -468,6 +468,12 @@ namespace Abelardo.UI
             Console.Write(_idioma.Get("ItemDescricaoEs"));
             string descEs = Console.ReadLine();
 
+            Console.Write(_idioma.Get("ItemDescricaoFr"));
+            string descFr = Console.ReadLine();
+
+            Console.Write(_idioma.Get("ItemDescricaoJa"));
+            string descJa = Console.ReadLine();
+
             Console.Write(_idioma.Get("ItemPreco"));
             if (!decimal.TryParse(Console.ReadLine(), NumberStyles.Any,
                     CultureInfo.CurrentCulture, out decimal preco))
@@ -480,7 +486,7 @@ namespace Abelardo.UI
             Console.Write(_idioma.Get("ItemDisponivel"));
             bool disp = _idioma.SimOuNao(Console.ReadLine() ?? "S");
 
-            _menuService.Adicionar(new ItemMenu(cod, (Categoria)catNum, desc, preco, disp, descEn, descEs));
+            _menuService.Adicionar(new ItemMenu(cod, (Categoria)catNum, desc, preco, disp, descEn, descEs, descFr, descJa));
             Console.WriteLine(_idioma.Get("ItemCadastrado"));
             Pausar();
         }
@@ -516,6 +522,12 @@ namespace Abelardo.UI
             Console.Write(_idioma.Get("ItemDescricaoEs"));
             string descEs = Console.ReadLine();
 
+            Console.Write(_idioma.Get("ItemDescricaoFr"));
+            string descFr = Console.ReadLine();
+
+            Console.Write(_idioma.Get("ItemDescricaoJa"));
+            string descJa = Console.ReadLine();
+
             Console.Write(_idioma.Get("ItemPreco"));
             if (!decimal.TryParse(Console.ReadLine(), NumberStyles.Any,
                     CultureInfo.CurrentCulture, out decimal preco))
@@ -528,7 +540,7 @@ namespace Abelardo.UI
             Console.Write(_idioma.Get("ItemDisponivel"));
             bool disp = _idioma.SimOuNao(Console.ReadLine() ?? "S");
 
-            item.Atualizar((Categoria)catNum, desc, preco, disp, descEn, descEs);
+            item.Atualizar((Categoria)catNum, desc, preco, disp, descEn, descEs, descFr, descJa);
             Console.WriteLine(_idioma.Get("ItemEditado"));
             Pausar();
         }
@@ -563,10 +575,10 @@ namespace Abelardo.UI
 
                 switch (Console.ReadLine())
                 {
-                    case "1": RelPeriodo();        break;
-                    case "2": RelCliente();        break;
+                    case "1": RelPeriodo(); break;
+                    case "2": RelCliente(); break;
                     case "3": RelClientePeriodo(); break;
-                    case "4": RelItem();           break;
+                    case "4": RelItem(); break;
                     case "0": return;
                     default:
                         Console.WriteLine(_idioma.Get("OpcaoInvalida"));

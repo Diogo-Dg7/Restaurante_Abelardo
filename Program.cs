@@ -12,17 +12,24 @@ namespace Abelardo
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
             // Unico trecho inevitavelmente hardcoded: precisamos do idioma antes de carregar recursos
-            Console.WriteLine("Selecione o idioma / Select language / Seleccione el idioma:");
-            Console.WriteLine("(1) Portugues   (2) English   (3) Espanol");
+            Console.WriteLine("Selecione o idioma / Select language / Seleccione el idioma / Choisissez la langue / 言語を選択してください:");
+            Console.WriteLine("(1) Portugues   (2) English   (3) Espanol   (4) Français   (5) 日本語");
             Console.Write("> ");
             string opcaoStr = Console.ReadLine();
-            int opcao = opcaoStr == "2" ? 2 : opcaoStr == "3" ? 3 : 1;
+            int opcao = opcaoStr switch
+            {
+                "2" => 2,
+                "3" => 3,
+                "4" => 4,
+                "5" => 5,
+                _ => 1
+            };
 
-            var idioma           = new Idioma(opcao);
-            var menuService      = new MenuService(idioma);
-            var pedidoService    = new PedidoService();
+            var idioma = new Idioma(opcao);
+            var menuService = new MenuService(idioma);
+            var pedidoService = new PedidoService();
             var relatorioService = new RelatorioService(pedidoService);
-            var persistencia     = new PersistenciaService();
+            var persistencia = new PersistenciaService();
 
             // Tenta carregar dados salvos; se nao existir usa o mock
             if (persistencia.ExisteArquivo())

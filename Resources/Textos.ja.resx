@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Geral -->
+  <data name="AppTitulo" xml:space="preserve"><value>アベラルド・レストラン - 注文システム</value></data>
+  <data name="MenuPrincipal" xml:space="preserve"><value>=== メインメニュー ===</value></data>
+  <data name="OpcaoCliente" xml:space="preserve"><value>1. お客様エリア</value></data>
+  <data name="OpcaoFuncionario" xml:space="preserve"><value>2. 従業員エリア</value></data>
+  <data name="OpcaoAdmin" xml:space="preserve"><value>3. 管理者エリア</value></data>
+  <data name="OpcaoTrocarIdioma" xml:space="preserve"><value>4. 言語を変更</value></data>
+  <data name="OpcaoSair" xml:space="preserve"><value>0. 終了</value></data>
+  <data name="EscolhaOpcao" xml:space="preserve"><value>オプションを選択してください: </value></data>
+  <data name="OpcaoInvalida" xml:space="preserve"><value>無効なオプションです。もう一度お試しください。</value></data>
+  <data name="Voltar" xml:space="preserve"><value>0. 戻る</value></data>
+  <data name="EnterContinuar" xml:space="preserve"><value>続けるにはENTERキーを押してください...</value></data>
+  <data name="AteLogo" xml:space="preserve"><value>さようなら!</value></data>
+
+  <!-- Idioma -->
+  <data name="TrocarIdiomaPrompt" xml:space="preserve">
+  <value>選択してください: (1) ポルトガル語  (2) English  (3) Español  (4) Français  (5) 日本語</value></data>
+  <data name="IdiomaAlterado" xml:space="preserve"><value>言語が正常に変更されました!</value></data>
+
+  <!-- Persistencia -->
+  <data name="DadosCarregados" xml:space="preserve"><value>以前のデータが正常に読み込まれました。続けるにはENTERキーを押してください...</value></data>
+  <data name="DadosMockCarregados" xml:space="preserve"><value>保存されたデータが見つかりません。サンプルデータを読み込みました。続けるにはENTERキーを押してください...</value></data>
+  <data name="ErroDados" xml:space="preserve"><value>保存データの読み込み中にエラーが発生しました。サンプルデータで起動します...</value></data>
+  <data name="DadosSalvos" xml:space="preserve"><value>データが正常に保存されました。</value></data>
+
+  <!-- Autenticacao -->
+  <data name="SenhaFuncionario" xml:space="preserve"><value>従業員パスワードを入力してください: </value></data>
+  <data name="SenhaAdmin" xml:space="preserve"><value>管理者パスワードを入力してください: </value></data>
+  <data name="SenhaIncorreta" xml:space="preserve"><value>パスワードが間違っています!</value></data>
+  <data name="AcessoConcedido" xml:space="preserve"><value>アクセスが許可されました!</value></data>
+
+  <!-- Menu Cardapio -->
+  <data name="MenuCardapio" xml:space="preserve"><value>=== メニュー管理 ===</value></data>
+  <data name="ListarItens" xml:space="preserve"><value>1. 全商品を一覧表示</value></data>
+  <data name="CadastrarItem" xml:space="preserve"><value>2. 新商品を追加</value></data>
+  <data name="EditarItem" xml:space="preserve"><value>3. 商品を編集</value></data>
+  <data name="DeletarItem" xml:space="preserve"><value>4. 商品を削除</value></data>
+
+  <!-- Campos Item -->
+  <data name="ItemCodigo" xml:space="preserve"><value>商品コード: </value></data>
+  <data name="ItemCategoria" xml:space="preserve"><value>カテゴリー (1-前菜, 2-飲み物, 3-メインディッシュ, 4-デザート): </value></data>
+  <data name="ItemDescricao" xml:space="preserve"><value>説明 (pt-BR): </value></data>
+  <data name="ItemDescricaoEn" xml:space="preserve"><value>英語での説明 (English): </value></data>
+  <data name="ItemDescricaoEs" xml:space="preserve"><value>スペイン語での説明 (Español): </value></data>
+  <data name="ItemDescricaoFr" xml:space="preserve"><value>フランス語での説明: </value></data>
+  <data name="ItemPreco" xml:space="preserve"><value>価格: ¥ </value></data>
+  <data name="ItemDisponivel" xml:space="preserve"><value>在庫あり? (はい/いいえ): </value></data>
+
+  <!-- Feedback Item -->
+  <data name="ItemCadastrado" xml:space="preserve"><value>商品が正常に登録されました!</value></data>
+  <data name="ItemEditado" xml:space="preserve"><value>商品が正常に編集されました!</value></data>
+  <data name="ItemDeletado" xml:space="preserve"><value>商品が正常に削除されました!</value></data>
+  <data name="ItemNaoEncontrado" xml:space="preserve"><value>商品が見つかりません。</value></data>
+  <data name="ItemIndisponivel" xml:space="preserve"><value>商品が利用不可または見つかりません。</value></data>
+  <data name="ItemAdicionado" xml:space="preserve"><value>商品が注文に追加されました!</value></data>
+  <data name="ItemRemovido" xml:space="preserve"><value>商品が注文から削除されました。</value></data>
+  <data name="CodigoJaExiste" xml:space="preserve"><value>このコードの商品は既に存在します。</value></data>
+
+  <!-- Categorias -->
+  <data name="CatEntradas" xml:space="preserve"><value>前菜</value></data>
+  <data name="CatBebidas" xml:space="preserve"><value>飲み物</value></data>
+  <data name="CatPratosPrincipais" xml:space="preserve"><value>メインディッシュ</value></data>
+  <data name="CatSobremesas" xml:space="preserve"><value>デザート</value></data>
+
+  <!-- Menu Cliente -->
+  <data name="MenuPedidos" xml:space="preserve"><value>=== お客様エリア ===</value></data>
+  <data name="VisualizarCardapio" xml:space="preserve"><value>1. メニューを表示</value></data>
+  <data name="FazerPedido" xml:space="preserve"><value>2. 注文する</value></data>
+  <data name="EditarPedido" xml:space="preserve"><value>3. 未決済の注文を編集</value></data>
+  <data name="PagarPedido" xml:space="preserve"><value>4. 注文を支払って完了</value></data>
+
+  <!-- Dados Cliente -->
+  <data name="NomeCliente" xml:space="preserve"><value>お名前 (ENTERで匿名): </value></data>
+  <data name="EmailCliente" xml:space="preserve"><value>メールアドレス (ENTERでスキップ): </value></data>
+
+  <!-- Operacoes Pedido -->
+  <data name="CodigoItem" xml:space="preserve"><value>商品コード (0で終了): </value></data>
+  <data name="QuantidadeItem" xml:space="preserve"><value>数量: </value></data>
+  <data name="NumeroPedido" xml:space="preserve"><value>注文番号: </value></data>
+  <data name="OpcaoAdicionarItem" xml:space="preserve"><value>1. 商品を追加</value></data>
+  <data name="OpcaoRemoverItem" xml:space="preserve"><value>2. 商品を削除</value></data>
+  <data name="RemoverItem" xml:space="preserve"><value>削除する商品コード (0でキャンセル): </value></data>
+  <data name="DividirConta" xml:space="preserve"><value>割り勘しますか? (はい/いいえ): </value></data>
+  <data name="NumeroPessoas" xml:space="preserve"><value>人数: </value></data>
+
+  <!-- Feedback Pedido -->
+  <data name="PedidoCriado" xml:space="preserve"><value>注文 #{0} が正常に作成されました!</value></data>
+  <data name="PedidoPago" xml:space="preserve"><value>注文 #{0} が支払われました! 合計: ¥ {1:F2}</value></data>
+  <data name="PedidoNaoEncontrado" xml:space="preserve"><value>注文が見つかりません。</value></data>
+  <data name="PedidoJaEncerrado" xml:space="preserve"><value>この注文は既に完了しています。</value></data>
+  <data name="PedidoVazio" xml:space="preserve"><value>注文が空です。注文は作成されませんでした。</value></data>
+  <data name="PedidoAtual" xml:space="preserve"><value>=== 現在の注文 ===</value></data>
+  <data name="ValorPorPessoa" xml:space="preserve"><value>一人あたりの金額: ¥ {0:F2}</value></data>
+
+  <!-- Relatorios -->
+  <data name="MenuRelatorios" xml:space="preserve"><value>=== レポート ===</value></data>
+  <data name="RelatorioPeriodo" xml:space="preserve"><value>1. 期間別レポート</value></data>
+  <data name="RelatorioCliente" xml:space="preserve"><value>2. 顧客別レポート</value></data>
+  <data name="RelatorioClientePeriodo" xml:space="preserve"><value>3. 期間内の顧客別レポート</value></data>
+  <data name="RelatorioItem" xml:space="preserve"><value>4. 商品消費レポート</value></data>
+  <data name="RelatorioTitulo" xml:space="preserve"><value>--- レポート ---</value></data>
+  <data name="RelatorioGeradoEm" xml:space="preserve"><value>生成日時</value></data>
+  <data name="RelatorioSalvo" xml:space="preserve"><value>レポートが保存されました: {0}</value></data>
+  <data name="NenhumResultado" xml:space="preserve"><value>結果が見つかりませんでした。</value></data>
+  <data name="EmailOuNome" xml:space="preserve"><value>顧客のメールまたは名前: </value></data>
+
+  <!-- Datas -->
+  <data name="DataInicio" xml:space="preserve"><value>開始日 ({0}): </value></data>
+  <data name="DataFim" xml:space="preserve"><value>終了日 ({0}): </value></data>
+  <data name="DataInvalida" xml:space="preserve"><value>無効な日付です。形式を確認して再試行してください。</value></data>
+
+  <!-- Colunas -->
+  <data name="ColCodigo" xml:space="preserve"><value>コード</value></data>
+  <data name="ColCategoria" xml:space="preserve"><value>カテゴリー</value></data>
+  <data name="ColDescricao" xml:space="preserve"><value>説明</value></data>
+  <data name="ColPreco" xml:space="preserve"><value>価格</value></data>
+  <data name="ColDisponivel" xml:space="preserve"><value>在庫</value></data>
+  <data name="ColSim" xml:space="preserve"><value>はい</value></data>
+  <data name="ColNao" xml:space="preserve"><value>いいえ</value></data>
+  <data name="ColPedido" xml:space="preserve"><value>注文</value></data>
+  <data name="ColCliente" xml:space="preserve"><value>顧客</value></data>
+  <data name="ColData" xml:space="preserve"><value>日付</value></data>
+  <data name="ColTotal" xml:space="preserve"><value>合計</value></data>
+  <data name="ColStatus" xml:space="preserve"><value>ステータス</value></data>
+
+  <!-- Status -->
+  <data name="StatusAberto" xml:space="preserve"><value>未決済</value></data>
+  <data name="StatusPago" xml:space="preserve"><value>支払済</value></data>
+  <data name="Total" xml:space="preserve"><value>合計: ¥ {0:F2}</value></data>
+</root>
